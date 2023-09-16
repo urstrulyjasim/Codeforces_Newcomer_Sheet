@@ -1,0 +1,44 @@
+#include <bits/stdc++.h>
+using namespace std;
+void prime(int t)
+{
+    int count = 0;
+    long long n;
+    while (t--)
+    {
+        cin >> n;
+        if (n == 1)
+        {
+            cout << "NO" << endl; // 1 is a composite number (controvertial)
+        }
+        else
+        {
+            for (int i = 2; i <= sqrt(n); i++)
+            {
+                if (n % i == 0)
+                {
+                    count++;
+                    break;
+                }
+            }
+            if (count == 0)
+            {
+                cout << "YES" << endl;
+                count = 0;
+            }
+            else
+            {
+                cout << "NO" << endl;
+                count = 0;
+            }
+        }
+    }
+}
+int main()
+{
+    int t;
+    cin >> t;
+    prime(t);
+
+    return 0;
+}
