@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    char c;
+    int a,b;
+    scanf("%d %c %d",&a,&c,&b);
+    if(c=='>'){
+        if(a>b){
+            printf("Right\n");
+        }
+        else
+            printf("Wrong\n");
+    }
+    else if(c=='<'){
+        if(b>a){
+            printf("Right\n");
+
+        }
+        else
+            printf("Wrong\n");
+    }
+    else if(c=='='){
+        if(a==b){
+            printf("Right\n");
+        }
+        else
+            printf("Wrong\n");
+    }
+    return 0;
+}
