@@ -1,0 +1,20 @@
+//بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+#include<bits/stdc++.h>
+using namespace std;
+       
+int main()
+{
+    char s;
+    cin>>s;
+    if(s>=65 && s<=90)
+    {
+        cout<<"ALPHA\n"<<"IS CAPITAL"<<endl;
+    }   
+    else if(s>=97 && s<=122)
+    {
+        cout<<"ALPHA\n"<<"IS SMALL"<<endl;
+    }   
+    else
+        cout<<"IS DIGIT"<<endl;
+    return 0;
+}
