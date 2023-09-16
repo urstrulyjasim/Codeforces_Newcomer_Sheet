@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+int main()
+{
+
+    double a,b,c,d,ab,cd;
+    scanf("%lf %lf %lf %lf",&a,&b,&c,&d);
+    ab=b*log(a);
+    cd=d*log(c);
+    if(ab>cd)
+    {
+        printf("YES\n");
+    }
+    else
+        printf("NO\n");
+    return 0;
+}
