@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    char o,e;
+    int a,b,c;
+    scanf("%d %c %d %c %d",&a,&o,&b,&e,&c);
+    int P=a+b;
+    int S=a-b;
+    int M=a*b;
+    if(o =='+'){
+        if(c==P){
+            printf("Yes\n");
+        }
+        else
+            printf("%d\n",P);
+    }
+    else if(o=='-'){
+        if(c==S){
+            printf("Yes\n");
+        }
+        else
+            printf("%d\n",S);
+    }
+    else if(o =='*'){
+        if(c==M){
+            printf("Yes\n");
+        }
+        else
+            printf("%d\n",M);
+    }
+    return 0;
+}
