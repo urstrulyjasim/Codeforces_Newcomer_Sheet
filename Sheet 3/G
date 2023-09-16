@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int N,p,t=0,i,j;
+    scanf("%d",&N);
+    long long a[N];
+    for(i=0;i<N;i++)
+    {
+        scanf("%lld",&a[i]);
+
+    }
+    for(i=N-1,j=0;i>=0,j<N;i--,j++)
+    {
+      if(a[i]!=a[j]){
+        t++;
+      }
+
+    }
+    if(t!=0)
+        printf("NO\n");
+    else if(t==0){
+        printf("YES\n");
+    }
+
+    return 0;
+}
