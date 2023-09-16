@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int n,y,e1,m,e2,d;
+    scanf("%d",&n);
+    y=n/365;
+    e1=n%365;
+    m=e1/30;
+    e2=e1%30;
+    d=e2;
+    printf("%d years\n",y);
+    printf("%d months\n",m);
+    printf("%d days\n",d);
+    return 0;
+}
