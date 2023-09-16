@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    char a1[100],a2[100];
+    char b1[100],b2[100];
+    scanf("%s %s",&a1,&a2);
+    scanf("%s %s",&b1,&b2);
+   int d = strcmp(a2,b2);
+    if(d==0){
+        printf("ARE Brothers\n");
+    }
+    else
+        printf("NOT\n");
+    return 0;
+
+}
