@@ -1,0 +1,60 @@
+#include<stdio.h>
+int main()
+{
+   int N,count=0,i,j,temp;
+   scanf("%d",&N);
+   long long a[N];
+   long long b[N];
+   for(i=0;i<N;i++)
+   {
+    scanf("%lld",&a[i]);
+   }
+   for(i=0;i<N;i++)
+   {
+    scanf("%lld",&b[i]);
+   }
+
+   for(i=0;i<N;i++)
+   {
+    for(j=i+1;j<N;j++)
+    {
+        if(a[j]<=a[i])
+        {
+              temp = a[i];
+              a[i]=a[j];
+              a[j]=temp;
+        }
+    }
+   }
+   for(i=0;i<N;i++)
+   {
+    for(j=i+1;j<N;j++)
+    {
+        if(b[j]<=b[i])
+        {
+              temp = b[i];
+              b[i]=b[j];
+              b[j]=temp;
+        }
+    }
+   }
+
+   for(i=0;i<N;i++)
+   {
+       if(a[i]!=b[i])
+       {
+        count++;
+       }
+   }
+   if(count!=0)
+   {
+    printf("no\n");
+   }
+   else if(count==0)
+   {
+    printf("yes\n");
+   }
+
+
+    return 0;
+}
