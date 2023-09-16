@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main()
+{
+    long long a,b;
+    scanf("%lld %lld",&a,&b);
+    //last number :
+    int l1= a%10;
+    int l2= b%10;
+    int result = l1 + l2;
+    printf("%d\n",result);
+    return 0;
+}
