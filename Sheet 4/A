@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+     char s1[1001],s2[1001];
+     int n1=0,n2=0,i;
+     scanf("%s",&s1);
+     scanf("%s",&s2);
+      for(i=0; s1[i]!='\0'; i++)
+    {
+        n1++;
+    }
+    for(i=0; s2[i]!='\0'; i++)
+    {
+        n2++;
+    }
+    printf("%d %d\n",n1,n2);
+    printf("%s %s\n",s1,s2);
+    return 0;
+}
