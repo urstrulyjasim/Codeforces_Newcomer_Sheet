@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    long long N,t,pos=-1;
+    scanf("%lld",&N);
+    long long a[N];
+    for(int i=0;i<N;i++)
+    {
+        scanf("%lld",&a[i]);
+    }
+    scanf("%lld",&t);
+    for(int i=0;i<N;i++)
+    {
+        if(a[i]==t)
+        {
+            pos = pos + i +1;
+            break;
+        }
+    }
+    printf("%lld\n",pos);
+    return 0;
+}
